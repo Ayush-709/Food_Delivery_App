@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterCustomer">
+
+    <ProgressBar
+        android:id="@+id/progressReg"
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginHorizontal="100dp"
+        android:minHeight="25dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/register"
+        android:foreground="@drawable/foreground"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="40dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/lobster"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:theme="@style/CustomerTheme"
+                app:layout_constraintTop_toBottomOf="@id/text">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regCustName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="15dp"
+                    android:autofillHints="name"
+                    android:hint="@string/enter_name"
+                    android:minHeight="50dp"
+                    android:paddingHorizontal="5dp"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/CustomerTheme"
+                    app:hintTextColor="#BFBFBF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regCustMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:hint="@string/enter_email_address"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="50dp"
+                    android:padding="5dp"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/CustomerTheme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="name"
+                        android:drawableStart="@drawable/ic_mail"
+                        android:drawablePadding="10dp"
+                        android:inputType="textWebEmailAddress"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        app:hintTextColor="#BFBFBF"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regCustPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:hint="@string/enter_password"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="50dp"
+                    android:padding="5dp"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/CustomerTheme"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="name"
+                        android:drawableStart="@drawable/ic_pass"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        app:hintTextColor="#BFBFBF"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regCustConfPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:hint="@string/confirm_password"
+                    android:minHeight="50dp"
+                    android:padding="5dp"
+                    app:expandedHintEnabled="false"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/CustomerTheme"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="name"
+                        android:drawableStart="@drawable/ic_pass"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        app:hintTextColor="#BFBFBF"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regBtnCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/ubuntu"
+                android:padding="15dp"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/inputs"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                tools:layout_editor_absoluteX="50dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FoodinGo" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yourSelectedColor</item>
+        <item name="colorPrimaryDark">@color/Black</item>
+        <item name="colorAccent">@color/darkgrey</item>
+    </style>
+
+    <style name="AppThemeNoActionbar" parent="Theme.FoodinGo">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="TopTextTheme" parent="TextAppearance.AppCompat">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="CustomerTheme">
+        <item name="android:textColorHint">#BFBFBF</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorControlNormal">#C9C9C9</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+</resources>

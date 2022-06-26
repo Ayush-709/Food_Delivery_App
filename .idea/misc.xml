@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable-v24/foreground.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable-v24/selected_tab_bg.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable-xxhdpi/splash_screen.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/btn_bg.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/btn_bg2.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/butttons.xml" value="0.136" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/cursor.xml" value="0.136" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/custom_progress.xml" value="0.13" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/splash_back.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/drawable/splash_screen.xml" value="0.172" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_edit_menu.xml" value="0.24375" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_home_menu.xml" value="0.24375" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_home_screen.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_register_customer.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/activity_sign_in_customer.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/fragment_admin.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/Documents/GitProjects/FoodinGo/app/src/main/res/layout/fragment_customer.xml" value="0.27025641025641023" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

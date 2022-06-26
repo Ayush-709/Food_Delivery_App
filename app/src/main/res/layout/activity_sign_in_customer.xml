@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInCustomer">
+
+    <ProgressBar
+        android:id="@+id/progressSignIn"
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginHorizontal="100dp"
+        android:minHeight="25dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtnCust" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/register"
+        android:foreground="@drawable/foreground"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:theme="@style/CustomerTheme"
+        app:layout_constraintTop_toBottomOf="@id/text">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signInMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="15dp"
+            android:hint="@string/enter_email_address"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            app:expandedHintEnabled="false"
+            app:hintTextAppearance="@style/CustomerTheme">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="name"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                app:hintTextColor="#BFBFBF"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signInPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="15dp"
+            android:hint="@string/enter_password"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            app:expandedHintEnabled="false"
+            app:hintTextAppearance="@style/CustomerTheme"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="name"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                app:hintTextColor="#BFBFBF"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInBtnCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/ubuntu"
+        android:padding="15dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/inputs"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteX="50dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
